@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+div{
+  border-radius: 5px;
+}
+/* Paleta: 🎨🖌️
+  VERMELHO:   #D90416
+  AZUL FORTE: #272C8C
+  AZUL:       #393C73
+  BRANCO:     #F2F2F2
+  PRETO:      #0D0D0D    */
+  
+/* --- CABEÇALHO --- */
+header{
+  width: 100%;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  box-shadow: 0 0 0px rgb(0,0,0,.3);
+}
+/* Logo */
+header img{
+  width: 80px;
+}
+
+/* --- CORPO --- */
+
+main{
+  width: 95%;
+  margin: 8% auto;
+  margin-bottom: 100px;
+  box-shadow: 0 0 0px rgb(0,0,0,.3);
+}
+
+main #welcome{
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 0 5px rgb(0,0,0,.3);
+  text-align: center;
+  border-radius: 5px;
+}
+main #welcome h1{
+  font-family: 'Nunito';
+  text-align: center;
+  color: #272C8C;
+}
+main #welcome p{
+  color: gray;
+  font-family: 'satisfy';
+  color: #D90416;
+}
+
+/* --- HORÁRIO --- */
+
+#horario{
+  width: 100%;
+  min-height: 80px;
+  margin-top: 8%;
+  display: grid;
+  grid-template-areas: 'left right';
+  box-shadow: 0 0 5px rgb(0,0,0,.3);
+  border-radius: 5px;
+}
+#horario div:first-child{
+  grid-area: left;
+  display: grid;
+ 
+}
+#horario div:last-child{
+  grid-area: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#horario div:first-child h4, #horario div:first-child p{
+  padding-left: 20px;
+  font-family: 'nunito';
+  
+}
+#horario div:first-child h4:first-child{
+  align-self: end;
+  color: #272C8C;
+}
+#horario div:first-child p:last-child{
+  align-self: start;
+}
+#horario div:last-child img{
+  width: 15px;
+  transform: rotate(-90deg);
+}
+
+/* --- INTERFRUTAS --- */
+
+#frutas{
+  width: 100%;
+  height: 200px;
+  margin-top: 5%;
+  background-image: url('bowl.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+#frutas div{
+  width: 100%;
+  height: 70px;
+  background: #008037;
+  color: white;
+  display: grid;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #008037;
+  border-bottom: none;
+}
+#frutas div h2{
+  align-self: end;
+  padding-left: 10px;
+  font-family: "nunito";
+}
+#frutas div p{
+  align-self: start;
+  padding-left: 10px;
+  font-family: "nunito";
+}
+/* --- CARNES --- */
+#carnes{
+  width: 100%;
+  height: 180px;
+  margin-top: 5%;
+ background-image: url('carnes.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position-y: 50%;
+ box-shadow: 0 0 10px rgb(0,0,0,.3);
+}
+/* --- BOTECO --- */
+
+#boteco{
+  width: 100%;
+  padding: 0;
+  margin: 5% 0;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgb(0,0,0,.0);
+}
+#boteco video{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+#boteco img{
+  width: 100%;
+  border-radius: 5px;
+}
+/* --- ENCARTE --- */
+#encarte, #encarte img{
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+/* --- INTRODUÇÃO --- */
+section{
+  width: 100%;
+  background: #393C73;
+  background-image: linear-gradient(transparent, white);
+}
+
+#introduce{
+  display: flex;
+  align-items: center;
+}
+
+#introduce img{
+  width: 120px;
+}
+
+#introduce p{
+  font-family: 'Caveat';
+  font-size: 120%;
+  color: #F2F2F2;
+  padding: 5px 10px;
+}
+
+#encarte img{
+  width: 100%;
+}
+
+/* divisor */
+:root {
+  --size: 50px; /* size of the cut */
+  --gap: 10px;  /* the gap */
+}
+
+.bottom {
+  width: 100%;
+  height: 55px;
+  margin-top: 100px;
+  border-radius: 0px;
+  background: #393C73;
+  clip-path: polygon(0 0,50% var(--size),100% 0,100% 100%,0 100%);
+  margin-top: calc(var(--gap) - var(--size));
+}
+
+.top {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(#393C73, #393C73);
+  border-radius: 0px;
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px));
+}
+
+/* --- Whatsapp --- */
+
+#whatsapp, .div{
+  width: 95%;
+  margin: 5% auto;
+  padding: 10px 0;
+  box-shadow: 0 0 5px rgb(0,0,0,.3);
+}
+
+#whatsapp h3, #frete h3{
+  font-family: 'Nunito';
+  color: #393C73; 
+  padding: 0 10px; 
+}
+#whatsapp h3 img{
+  width: 30px;
+  margin-left: 5px;
+}
+#whatsapp div, #frete div{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#whatsapp div p, #frete p{
+  font-family: 'nunito';
+  color: black;
+  padding: 5px 10px;
+}
+#whatsapp div img, #frete div img{
+  width: 100px;
+}
+
+/* --- atm --- */
+
+#atm{
+  width: 100%;
+  border-radius: 0px;
+  position: relative;
+  background-image: linear-gradient(#393C73, #D90416);
+}
+#atm h3{
+  color: white;
+  font-family: 'Nunito';
+  padding: 10px 20px;
+}
+
+#atm p{
+  width: 80%;
+  font-family: 'Nunito';
+  color: white;
+  padding-left: 20px;
+}
+
+#atm img{
+  width: 100%;
+  
+  opacity: .6;
+  transform: scaleX(-1);
+}
+
+/* --- PAY --- */
+
+#pay{
+  padding: 5% 0;
+  border-radius: 0px;
+  background: white;
+}
+
+#pay h2{
+  font-family: 'nunito';
+  color: #393C73;
+  padding: 5px 20px;
+}
+
+#pay div{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+#pay div ul{
+  width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+}
+#pay div ul li{
+  padding-left: 20px;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    font-family: 'nunito';
+}
+#pay div li img{
+  width: 50px;
+  padding-right: 5px;
+}
+
+#pay div img{
+  width: 100px;
+  float: right;
+}
+
+/* --- MAPA --- */
+
+#mapa{
+  width: 90%;
+  height: 65px;
+  margin: 5% auto;
+  display: grid;
+  filter: brightness(101%);
+  grid-template-columns: 1fr 2fr;
+  background-image: url('10.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  font-family: 'Nunito';
+  color: black;
+}
+#mapa div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mapa div:last-child{
+  display: grid;
+}
+#mapa div:last-child h5{
+  align-self: start;
+  font-size: 90%;
+}
+#mapa div:last-child p{
+  align-self: end;
+}
+#mapa div:first-child img{
+  width: 30px;
+}
