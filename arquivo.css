@@ -32,13 +32,18 @@ header img{
   width: 80px;
   justify-self: center;
 }
+#secao1 div{
+  width: 80%;
+  margin: auto;
+}
 #secao1 div h1, #secao1 div h5{
   font-family: 'nunito';
   font-size: 120%;
+  text-align: center;
 }
 #secao1 div h1{
   color: #393C73;
 }
 #secao1 div h5{
-  color: #90416:
+  color: #D90416:
 }
