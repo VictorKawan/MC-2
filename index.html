@@ -6,24 +6,63 @@
   <title>Mercadinho Cidade</title>
   <meta name="keywords" content="mercado, compras,mercadinho cidade,loja,mercadinho" />
   <meta name="author" content="Victor Kawan">
-  <link rel="stylesheet" type="text/css" media="all" href="arquivo.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="arquivoMC.css" />
   <meta name="HandheldFriendly" content="true">
   <meta name="theme-color" content="#393C73">
- </head>
- <body>
-   <section id="secao1">
-     <header>
-       <img src="logo.png" alt="">
-     </header>
-     <div>
-       <h1>Bem vindo ao Cidade</h1>
-       <h5>Sempre com você</h5>
-     </div>
-   </section>
-   <section id="secao2"></section>
-   <section id="secao3"></section>
-   <script type="text/javascript" charset="utf-8">
-     var secao = document.querySelector('#secao1');
-     secao.style.height = window.innerHeight+'px';
-   </script>
- </body>
+</head>
+<body>
+  <section id="secao1" >
+    <header>
+      <img id="logo" src="logo.png" alt="" />
+    </header>
+    <div id="div1">
+      <h1>Bem vindo ao Cidade</h1>
+      <p>Sempre com você</p>
+    </div>
+    <div id="grandFather">
+      <div id="father">
+        <!-- FILHO 1 -->
+        <div id="son1" class="children">
+          <img src="bowl.png" alt="" />
+          <div>
+            <h2>Segunda e terça</h2>
+            <h1>InterFrutas</h1>
+            <p>Frutas, Legumes e Verduras</p>
+          </div>
+        </div>
+        <div id="son2" class="children">
+          <img src="carnes.png" alt="" />
+          <div>
+            <h2>Quarta e Quinta</h2>
+            <h1>InterCarnes</h1>
+            <p>Carnes e Frios</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="horario">
+        <div>
+          <h4>Aberto Agora</h4>
+          <p>07:00-21:00</p>
+        </div>
+        <div>
+          <img src="seta.png" alt="" />
+        </div>
+    </div>
+  </section>
+  <section id="secao2">
+    <div id="introducao">
+      <img src="mascote.png" alt="">
+      <p>Nós do Mercadinho Cidade desejamos boas-vindas. Confira e aproveite nossas promoções no catálogo do site. 👇</p>
+    </div>
+  </section>
+  <section id="secao3">
+    
+  </section>
+  <script type="text/javascript">
+   var ob = document.querySelector("#secao1");
+   ob.style.height = window.innerHeight+'px'
+</script>
+</body>
+</html>
